@@ -51,13 +51,19 @@ class Ping
         $check = $this->urlExists($url);
         $time = new DateTime();
         if($check) {
-            $message = $url." is up - ".$time->format("U");
+            $message = $url." is up - ".$time->format("d-m-Y H:i:s");
         } else {
             $message = $url." is down - ".$time->format("U");
             mail($this->email, "Ping.php alert", $message);
         }
 
-        echo $message;
+        /**
+        * Logging Ping results
+        */
+        $file = 'log.txt';
+        $current = file_get_contents($file);
+        $current .= $message."\n";
+        file_put_contents($file, $current);
     }
 
     function urlExists($url = null)

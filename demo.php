@@ -4,8 +4,8 @@ require "Ping.php";
 /**
 * Ping calling
 */
-$email  = "marco.troisi@dubbleup.com";
-$url    = "http://www.marcotroisi.com";
+$email  = "test@test.it";
+$url    = "http://www.google.com";
 
 $ping = new Ping($email);
 $ping->checkUrl($url);
