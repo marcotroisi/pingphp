@@ -1,0 +1,6 @@
+{
+    "name": "marcotroisi/ping",
+    "require": {
+        "php": ">=5.3.0"
+    }
+}
