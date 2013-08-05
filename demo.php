@@ -1,5 +1,5 @@
 <?php
-require "Ping/Ping.php";
+require "Ping.php";
 
 /**
 * Ping calling
