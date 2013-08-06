@@ -13,7 +13,7 @@ A simple class that checks if a web application is up.
     `
     {
     "require": {
-    "marcotroisi/pingphp": "1.*"
+    "marcotroisi/pingphp": "dev-master"
     }
     }
     `
