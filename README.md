@@ -10,11 +10,13 @@ A simple class that checks if a web application is up.
     Option #2: Clone it (`git clone https://github.com/marcotroisi/pingphp.git`)
   + ** Get it from Composer  **
     Create a composer.json file in your root folder with this text:
-    `{
-      "require": {
-        "marcotroisi/pingphp": "1.*"
-      }
-    }`
+    `
+    {
+    "require": {
+    "marcotroisi/pingphp": "1.*"
+    }
+    }
+    `
 
     Download Composer by running this in your Command Line: `curl -s http://getcomposer.org/installer | php`
     
